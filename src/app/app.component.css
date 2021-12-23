@@ -1,0 +1,156 @@
+.calculator {
+  height: 538px;
+  width: 323px;
+  background: rgba(0, 0, 0, 0.65);
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  height: 33px;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.maximize i {
+  font-size: 14px;
+}
+
+.maximize {
+  height: 97%;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1px;
+  margin-top: 1px;
+}
+
+.screen {
+  height: 135px;
+  /* border: 1px solid white; */
+}
+
+.history {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1px;
+}
+
+.history i {
+  font-size: 16px;
+}
+
+.history:hover, .maximize:hover, .memory-panel button:hover {
+  background: rgb(122, 120, 120);
+  border: 1px solid rgb(163, 161, 161);
+}
+
+.expression {
+  font-size: 14px;
+  color: lightgray;
+  margin-right: 6px;
+  height: 20px;
+}
+
+.result {
+  color: white;
+  line-height: 60px;
+  padding-right: 4px;
+  margin-left: 4px;
+  margin-right: 12px;
+  max-width: 94%;
+  width: fit-content;
+  overflow-x: auto;
+}
+
+.memory-panel {
+  height: 36px;
+  margin-top: 2px;
+  padding: 0 2px;
+}
+
+.memory-panel button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: calc(100%/6);
+  flex-grow: 1;
+  font-weight: bold;
+  height: 100%;
+  cursor: default;
+}
+
+.numpad {
+  width: 100%;
+  flex-grow: 1;
+  padding: 1px 3px 3px 4px;
+}
+
+.numpad .row {
+  height: 100%;
+}
+
+.numpad button {
+  width: 98%;
+  flex-grow: 1;
+  background: rgba(37, 37, 37, 0.65);
+  cursor: default;
+  outline: none;
+  border: none;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 16px;
+}
+
+.numpad button:hover {
+  background: rgb(161, 160, 160);
+}
+
+.numkey {
+  background: rgba(0, 0, 0, 0.65) !important;
+}
+
+.numkey:hover {
+  background: rgb(161, 160, 160) !important;
+}
+
+.fs-large {
+  font-size: 24px !important;
+}
+
+.backspace-icon {
+  padding: 7px 0;
+}
+
+.equalsTo {
+  background: rgba(55, 77, 138, 0.705) !important;
+}
+
+.equalsTo:hover {
+  background: rgb(23, 39, 83) !important;
+}
+
+.backdrop {
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

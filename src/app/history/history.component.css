@@ -1,0 +1,51 @@
+.history {
+  z-index: 100;
+  background-color: rgb(34, 33, 33);
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.history-list {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  height: calc(100% - 45px);
+}
+
+.history-list li {
+  list-style: none;
+  padding: 5px 20px;
+  margin: 10px 0;
+}
+
+.history-list li:hover {
+  background-color: rgb(57 56 56);
+}
+
+.expression {
+  font-size: 16px;
+  color: rgb(197, 194, 194);
+  word-spacing: 5px;
+}
+
+.result {
+  font-size: 24px;
+}
+
+.clear-history {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 12px 15px;
+}
+
+.clear-history i {
+  font-size: 18px;
+}
+
+.clear-history:hover {
+  background: rgb(102, 100, 100);
+}

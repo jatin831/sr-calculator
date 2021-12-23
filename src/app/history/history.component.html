@@ -1,0 +1,14 @@
+<div class="history">
+  <div *ngIf="historyList.length === 0" class="d-flex pt-2 ps-3">
+    There's no history yet.
+  </div>
+  <ul class="history-list">
+    <li *ngFor="let history of historyList; let i = index" (click)="onSetHistory(i)">
+      <div class="d-flex justify-content-end expression">{{ history.expression }}</div>
+      <div class="d-flex justify-content-end result">{{ history.result }}</div>
+    </li>
+  </ul>
+  <div class="clear-history" (click)="clearHistory()">
+    <i class="far fa-trash-alt"></i>
+  </div>
+</div>
