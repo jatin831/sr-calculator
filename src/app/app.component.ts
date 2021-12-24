@@ -24,7 +24,7 @@ export class AppComponent {
   @HostListener('window:keydown', ['$event'])
   KeyEvent(event: KeyboardEvent) {
     let key = event.key;
-    if ('0' <= key && key <= '9') {
+    if (('0' <= key && key <= '9') || key === '.') {
       this.appendValue(key);
     } else if (key === '=' || key === 'Enter') {
       this.evaluate();
